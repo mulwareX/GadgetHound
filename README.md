@@ -38,7 +38,7 @@ No install step needed. Run directly with Python.
 
 ## Generating a Gadget File
 
-The tool accepts the standard output format used by ROPgadget, ropper, and pwntools.
+The tool accepts the standard output format used by ROPgadget, ropper, rp ++ and pwntools.
 
 **ROPgadget**
 ```bash
