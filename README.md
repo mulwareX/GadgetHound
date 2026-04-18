@@ -42,18 +42,18 @@ The tool accepts the standard output format used by ROPgadget, ropper, rp ++ and
 
 **ROPgadget**
 ```bash
-ROPgadget --binary target.elf --rop > gadgets.txt
+ROPgadget --binary target.exe --rop > gadgets.txt
 ```
 
 **ropper**
 ```bash
-ropper -f target.elf > gadgets.txt
+ropper -f target.exe > gadgets.txt
 ```
 
 **pwntools**
 ```python
 from pwn import *
-e = ELF("target.elf")
+e = ELF("target.exe")
 rop = ROP(e)
 with open("gadgets.txt", "w") as f:
     f.write(str(rop))
