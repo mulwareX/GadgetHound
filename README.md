@@ -239,6 +239,10 @@ python rop_search.py gadgets.txt -q "pop ecx ; ret" --no-color > results.txt
 ```
 
 ---
+# ROP FINDER
+# GADGET FINDER
+# OSED TOOLS
+# ROP SEARCH
 
 ## Output Format
 
