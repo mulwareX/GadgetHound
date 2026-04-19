@@ -1,6 +1,6 @@
 # GadgetHound
 
-A command-line tool for searching, filtering, and analysing ROP gadget lists exported by tools like **ROPgadget**, **ropper**, and **pwntools**. Supports smart wildcard queries, register aliases, exclude filters, result highlighting, paging, and more.
+A command-line tool for searching, filtering, and analysing ROP gadget lists exported by tools like **rp++**. Supports smart wildcard queries, register aliases, exclude filters, result highlighting, paging, and more.
 
 ---
 
@@ -28,36 +28,11 @@ A command-line tool for searching, filtering, and analysing ROP gadget lists exp
 ## Installation
 
 ```bash
-git clone https://github.com/yourname/rop-gadget-search.git
+git clone https://github.com/mulwarex/GadgetHound.git
 cd rop-gadget-search
 ```
 
 No install step needed. Run directly with Python.
-
----
-
-## Generating a Gadget File
-
-The tool accepts the standard output format used by ROPgadget, ropper, rp ++ and pwntools.
-
-**ROPgadget**
-```bash
-ROPgadget --binary target.exe --rop > gadgets.txt
-```
-
-**ropper**
-```bash
-ropper -f target.exe > gadgets.txt
-```
-
-**pwntools**
-```python
-from pwn import *
-e = ELF("target.exe")
-rop = ROP(e)
-with open("gadgets.txt", "w") as f:
-    f.write(str(rop))
-```
 
 ---
 
